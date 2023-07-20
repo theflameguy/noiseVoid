@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>p5.js example</title>
+  <style>
+    body {
+      padding: 0;
+      margin: 0;
+    }
+    ::-webkit-scrollbar {
+      width: 0px;
+    }
+  </style>
+  <!--for capturing the canvas(start)-->
+  <script src="../CCapture.js"></script>
+  <!-- Include WebM Writer if you want to export WebM -->
+  <script src="../webm-writer-0.2.0.js"></script>
+  <!-- Include gifjs if you want to export GIF -->
+  <script src="../gif.js"></script>
+  <!-- Include tar.js if you want to export PNG or JPEG -->
+  <script src="../tar.js"></script>
+  <!-- Include download.js for easier file download -->
+  <script src="../download.js"></script>
+  
+  <script>
+    // Create a capturer that exports a WebM video
+    var capturer = new CCapture( { format: 'webm',
+    framerate: 60,
+    verbose: true 
+  } ); 
+    // Create a capturer that exports a gif
+  //var capturer = new CCapture( { format: 'gif', workersPath: 'js/',
+    //framerate: 60,
+    //verbose: true 
+  //} ); 
+
+  
+
+</script>   
+  <!--for capturing the canvas(end)-->
+  
+  
+  <script src="../p5.js"></script>
+  <script src="sketch.js"></script>
+</head>
+
+<body>
+  <main>
+  </main>
+</body>
+
+</html>
