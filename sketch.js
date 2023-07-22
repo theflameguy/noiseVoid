@@ -49,7 +49,7 @@ function draw() {
   // if(frameCount===1)
   // capturer.start()
   
-  background(0,0,5);
+  background(0,0,6);
 
   translate(width/2,height/2);
   for(var i=0;i<n;i++){
