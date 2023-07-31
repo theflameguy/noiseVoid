@@ -49,12 +49,12 @@ function draw() {
   // if(frameCount===1)
   // capturer.start()
   
-  background(0,0,6);
+  background(50,10,5);
 
   translate(width/2,height/2);
   for(var i=0;i<n;i++){
     lim=map(i,0,n,l1,l2)
-    stroke(map(i,0,n,30,100),map(i,0,n,20,300),map(i,0,n,10,300));
+    stroke(map(i,0,n,50,80),map(i,0,n,50,100),map(i,0,n,10,300));
     strokeWeight(map(i,0,n,0.9,1.5));
     for(var j=0;j<lim+3;j++){
       curve(
