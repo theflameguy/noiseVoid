@@ -10,8 +10,9 @@
       padding: 0;
       margin: 0;
     }
-    ::-webkit-scrollbar {
-      width: 0px;
+    body::-webkit-scrollbar {
+      -webkit-appearance: none;
+      display: none;
     }
   </style>
  
@@ -20,7 +21,7 @@
   <script src="sketch.js"></script>
 </head>
 
-<body>
+<body scroll="no" style="overflow: hidden">>
   <main>
   </main>
 </body>
