@@ -1,5 +1,27 @@
-<!DOCTYPE html>
-<html lang="">
+<!DOCTYPE html >
+<html lang="" ondblclick="myFunction()">
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.7.0/lib/p5.js"></script>
+    <script src="../p5.js"></script>
+    <script src="sketch.js"></script>
+    <script>
+  
+        function myFunction() {
+            if (!document.fullscreenElement) {
+            document.documentElement.requestFullscreen()
+                .then(() => console.log('Fullscreen mode activated'))
+                .then(() => setup())
+                // .catch(err => console.error(`Error attempting fullscreen: ${err.message}`))
+            } else {
+            document.exitFullscreen()
+                .then(() => console.log('Exited fullscreen mode'))
+                // .catch(err => console.error(`Error exiting fullscreen: ${err.message}`))
+                .then(() => setup())
+
+            }
+
+        }
+
+    </script>
 
 <head>
   <meta charset="utf-8">
@@ -9,34 +31,23 @@
     body {
       padding: 0;
       margin: 0;
+      overflow: hidden;
     }
     body::-webkit-scrollbar {
       -webkit-appearance: none;
       display: none;
     }
   </style>
+  
  
-  <script src="https://cdn.jsdelivr.net/npm/p5@1.7.0/lib/p5.js"></script>
-  <script src="../p5.js"></script>
-  <script src="sketch.js"></script>
+  
 </head>
 
-<body scroll="no" style="overflow: hidden">
+<body scroll="no" >
   <main>
   </main>
 </body>
-  <script>
-  var elem = document.getElementByTagName("body");
-function openFullscreen() {
-  if (elem.requestFullscreen) {
-    elem.requestFullscreen();
-  } else if (elem.webkitRequestFullscreen) { /* Safari */
-    elem.webkitRequestFullscreen();
-  } else if (elem.msRequestFullscreen) { /* IE11 */
-    elem.msRequestFullscreen();
-  }
-}
-  </script>
+  
 
 
 </html>
